@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" id="WebApp_ID" version="3.0">
+  <display-name>RestMySqlCRUDE</display-name>
+ 
+ 
+  <servlet>
+  <display-name>RCreate</display-name>
+  <servlet-name>RCreate</servlet-name>
+  <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+  <init-param>
+  <param-name>jersey.config.server.provider.packages</param-name>
+ <param-value>com.create</param-value> 
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>RCreate</servlet-name>
+  <url-pattern>/rest/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <display-name>Display</display-name>
+  <servlet-name>Display</servlet-name>
+  <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+  <init-param>
+  <param-name>jersey.config.server.provider.packages</param-name>
+ <param-value>com.retrive</param-value> 
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Display</servlet-name>
+  <url-pattern>/read/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  <display-name>Updatee</display-name>
+  <servlet-name>Updatee</servlet-name>
+  <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+  <init-param>
+  <param-name>jersey.config.server.provider.packages</param-name>
+ <param-value>com.update</param-value> 
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Updatee</servlet-name>
+  <url-pattern>/insert/*</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  
+  <servlet>
+  <display-name>Deletee</display-name>
+  <servlet-name>Deletee</servlet-name>
+  <servlet-class>org.glassfish.jersey.servlet.ServletContainer</servlet-class>
+  <init-param>
+  <param-name>jersey.config.server.provider.packages</param-name>
+ <param-value>com.delete</param-value> 
+  </init-param>
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>Deletee</servlet-name>
+  <url-pattern>/delete/*</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

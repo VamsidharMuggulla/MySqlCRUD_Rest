@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<style>
+.div1
+{
+	background-color: #543345;
+	color: #ffffff;
+	
+}
+.div2
+{
+	background-color: #654456;
+	color: #ffffff;
+	padding: 10px;
+	
+}
+
+.div3
+{
+	background-color: #321123;
+	color: #ffffff;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+.div4
+{
+	background-color: #987321;
+	color: #ffffff;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+
+.div5
+{
+	background-color: #357753;
+	color: #ffffff;
+	padding: 10px;
+	margin-top: 10px;
+}
+
+
+</style>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body >
+<div class="div1"  align=center>
+<h1 align=center>MySql CRUD Operations Using Restful Web Services</h1>
+</div>
+<div class="div2" >
+<form method="get" action="http://localhost:8080/RestMySqlCRUDE/rest/Operations/Create">
+Enter Table Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tablename"><br><br>
+Enter Columm Name:                &nbsp;<input type="text" name="col1"> &nbsp;&nbsp;&nbsp;
+<br>
+<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Create Table</button>&nbsp;&nbsp;&nbsp;</form>
+</div>
+
+<div class="div3">
+
+<form method="get" action="http://localhost:8080/RestMySqlCRUDE/read/Retrive">
+
+
+Enter Table Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="tablename"><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 
+<button>Read Table</button></form>
+</div>
+<div class="div4">
+
+<form method="get" action="http://localhost:8080/RestMySqlCRUDE/insert/Update">
+Enter Table Name : <input type="text" name="tablename">&nbsp;<br><br>Enter Value  :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="text" name="value"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button>Update Table</button></form>
+</div>
+
+<div class="div5">
+
+<form method="get" action="http://localhost:8080/RestMySqlCRUDE/delete/Delete">
+Enter Table Name : <input type="text" name="tablename"><br><br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="">Delete Table</button></form>
+</div>
+
+
+</body>
+</html>
